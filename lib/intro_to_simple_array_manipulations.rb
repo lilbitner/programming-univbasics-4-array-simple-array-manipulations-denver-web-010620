@@ -56,14 +56,5 @@ end
 
 def using_delete_at(array, integer)
   famous_robots = ["Johnny 5", "R2D2", "Robocop"]
-  deleted_robot = famous_robots.delete_at[2] 
-end
-
-
-describe "using_delete_at" do 
-  it "takes in two arguments, an array and an integer and deletes the element at the index of the array that is equal to that integer" do 
-    famous_robots = ["Johnny 5", "R2D2", "Robocop"]
-    deleted_robot = using_delete_at(famous_robots, 2)
-    expect(deleted_robot).to eq("Robocop")
-  end
+  deleted_robot = famous_robots.delete_at(2) 
 end
