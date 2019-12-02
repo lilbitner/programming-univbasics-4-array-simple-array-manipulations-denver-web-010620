@@ -31,22 +31,12 @@ end
 def using_concat(array1, array2)
   @my_favorite_things = ["raindrops on roses", "whiskers on kittens"]
   more_favs = ["sports cars", "flatiron school"]
-  @all_my_favs = @my_favorite_things 
-  
-describe "using_concat" do 
-  before(:each) do 
-    @my_favorite_things = ["raindrops on roses", "whiskers on kittens"]
-    more_favs = ["sports cars", "flatiron school"]
-    @all_my_favs = using_concat(@my_favorite_things, more_favs)
-  end
-   it "takes in two arguments of two different arrays and uses the concat method to add the contents of the second array to the first" do 
-    expect(@all_my_favs).to eq(["raindrops on roses", "whiskers on kittens", "sports cars", "flatiron school"])
-   end
-
-   it "increases the length of the first array" do 
-    expect(@my_favorite_things.length).to be > 2
-   end
+  @all_my_favs = concat(@my_favorite_things, more_faves)
 end
+
+def using_insert(array, element) 
+  @list_of_programming_languages = ["Ruby", "JavaScript", "Java", "C#", "Objective C", "C++", "PHP"]
+  @new_array = @list_of_programming_languages.insert[4]
 
 describe "using_insert" do 
   before(:each) do 
