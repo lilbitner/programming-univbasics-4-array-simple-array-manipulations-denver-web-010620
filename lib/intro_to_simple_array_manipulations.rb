@@ -15,7 +15,7 @@ end
 
 def pop_with_args(array)
   @dog_breeds = ["Great Dane", "Golden Retriever", "Chihuahua", "Shiba Inu"]
-  @dog_breeds.pop[2,3] = @small_dogs 
+  @dog_breeds.pop(2,3) = @small_dogs 
 end
   
 def using_shift(array)
@@ -25,7 +25,7 @@ end
 
 def shift_with_args(array)
   @ice_cream_brands = ["Blue Bell Creameries", "Ben & Jerry's", "Baskin Robbins", "Braum's", "Breyer's"]
-  @ice_cream_brands.shift[0,1] = @brands_removed
+  @ice_cream_brands.shift(0,1) = @brands_removed
 end
 
 def using_concat(array1, array2)
